@@ -1,0 +1,1318 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    width:100%;
+    /* height:10000px; */
+    overflow-x: hidden;
+    margin: 0 auto;
+    min-height: 100vh;
+   
+}
+body {
+    font-family: open sans;
+}
+.logo{
+    width:10%;
+}
+.logo img{
+    width: 100%;
+}
+.header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+.nav_bar{
+    width:50%;
+    padding-top: 4%;
+   
+}
+.nav_bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav_bar ul li {
+
+}
+.nav_bar ul li a{
+    color:black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.header_tool{
+    width: 20%;
+    display: flex;
+    justify-content: space-around; 
+    margin-top: 2%;
+   
+}
+.header_tool label{
+    width: 20%;
+  
+}
+.header_tool label ion-icon{
+    width: 100%;
+    padding-top: 45%;
+    font-size: 30px;
+}
+.hoveref::after{
+    content: '';
+    display:block;
+    width:0;
+    height:2.5px;
+    background-color: rgb(8, 8, 8);
+    transition: width 0.3s;
+}
+.hoveref:hover::after{
+    width:100%;
+   
+}
+.aboutus{
+    width: 100%;
+    overflow: hidden;
+    height:700px;
+    
+}
+.aboutus div{
+    width: 100%;
+    padding-top:17%;
+    padding-bottom:17%;
+    background-size: cover;
+    background-color:rgba(10, 9, 9, 0.3);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: scalebg 10s alternate infinite;
+    
+}
+.aboutus div:nth-child(1){
+    background-image: url("thecoffeeimage/aboutus_jpg01.jpg");
+    
+}
+.aboutusbg2{
+   margin-top: -50%;
+   background-image: url("thecoffeeimage/aboutus_jpg02.jpg");
+}
+.aboutus div:nth-child(3){
+    margin-top: -50%;
+    background-image: url("thecoffeeimage/aboutus_jpg03.jpg");
+}
+
+.aboutus div{
+    text-align: center;
+    
+}
+.aboutus div input{
+   background-color: aqua;
+   font-size: 20px;
+   width: 10%;
+   border-radius: 100px;
+   height: 50px;
+   border:none;
+   color:white;
+   
+}
+.nav_mobile{
+    display: none;
+}
+.aboutus div p{
+    color:white
+}
+.aboutus div p:nth-child(1){
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+.aboutus div p:nth-child(2){
+    font-size: 40px;
+    font-family: EB Garamond;
+    margin-bottom: 1%;
+    transform: scale(1);
+}
+.search_tool{
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+}
+#search{
+    display: none;
+}
+.search_tool{
+    transform: translateY(-100%);
+    z-index: 2;
+    position: absolute;
+}
+.search_tool{
+    transition: all 0.7s;
+}
+#search:checked~.search_tool{
+    transform: translateY(0%);
+    transition: all 0.5s;
+}
+.search_tool .logo{
+    width: 20%;
+}
+.searchinput{
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    width: 60%;
+    margin-top: 10%;
+    height: 50px;
+   
+}
+.closeseach{
+    font-size: 40px;
+}
+.scale_background{
+    animation: scalebg2 10s alternate infinite;
+}
+.changebg{
+    width: 20%;
+    position: absolute;
+    z-index: 5;
+    top:100%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+.changebg ion-icon{
+    color: wheat;
+}
+.ourproduct1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ourproduct div:nth-child(1){
+    width: 100%;
+    height: 700px;
+    background-image: url(thecoffeeimage/ourproduct_jpg002.jpg);
+    background-size: cover;
+ 
+}
+ .ourproduct2{
+    width: 100%;
+    height: 700px;
+    background-image: url(thecoffeeimage/ourproduct_jpg002.jpg);
+    background-size: cover;
+ 
+}
+.ourproduct1 div:nth-child(1) p{
+    margin-top: 17%;
+}
+.ourproduct1 div p:nth-child(1){
+    color:#FF9999;
+    font-size: 14px;
+    font-weight: bold;
+}
+.ourproduct1 div p:nth-child(2){
+    color:Black;
+    font-size: 50px;
+    font-family: EB Garamond;
+    margin-top: 7%;
+}
+.ourproduct1 div p:nth-child(3){
+    color:Black;
+    font-size: 20px;
+    margin-top: 7%;
+   
+}
+.ourproduct1 div:nth-child(1){
+    width: 33.2%;
+ }
+.ourproduct1 div:nth-child(2){
+   background-image: url(thecoffeeimage/aboutus_jpg01.jpg),url(thecoffeeimage/aboutus_jpg02.jpg),url(thecoffeeimage/aboutus_jpg03.jpg);
+   background-repeat: no-repeat;
+   background-size: 65%,70%,70%;
+   background-position: left,50% 20%,95% 85%;
+   width: 49.8%;
+}
+.ourproduct1 div input{
+    background-color:#FF9999;
+    font-size: 18px;
+    color:rgb(252, 245, 245);
+    border-radius: 100px;
+    border: none;
+    width: 30%;
+    height: 7%;
+    margin-top: 7%;
+}
+.line-ver{
+    height: 10%;
+    width: 100%;
+    padding-left: 15px;
+    border-left: 2px solid 	#FF9966;
+    margin-top: 7%;
+    font-size: 16px;
+    color: 	#444444;
+}
+.ourproduct2{
+    width: 100%;
+    height: 700px;
+}
+.ourproduct2 .layout-our2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.layout-our2 img{
+    width: 30%;
+    height: 80%;
+    position: relative;
+    top:10%
+}
+.layout-our2 .text-ourpr2{
+    width:49.8%;
+}
+.ourproduct2 div p:nth-child(1){
+    color:#FF9999;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10%;
+}
+.ourproduct2 div p:nth-child(2){
+    color:Black;
+    font-size: 50px;
+    font-family: EB Garamond;
+    margin-top: 5%;
+}
+.ourproduct2 div p:nth-child(3){
+    color:Black;
+    font-size: 14px;
+    margin-top: 5%;
+    opacity: 0.7;
+}
+.ourproduct2 div ul{
+    margin-left: 2%;
+    margin-top: 5%;
+    font-family: open sans;
+}
+.ourproduct2 div ul li{
+    margin-top: 2%;
+    
+}
+.ourproduct2 div input{
+    background-color:#FF9999;
+    font-size: 18px;
+    color:rgb(252, 245, 245);
+    border-radius: 100px;
+    border: none;
+    width: 30%;
+    height: 50px;
+    margin-top: 5%;
+}
+.show-product{
+    /* background-image: url(thecoffeeimage/showpr_jpg001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100%;
+    height: 900px;
+    background-color: rgb(255, 255, 255);
+}
+.show-product .show-pr-text{
+    width: 100%;
+    position: relative;
+    top:10%;
+    left:6.3%;
+}
+.show-product .show-pr-text p:nth-child(1){
+    color:#FF9999;
+    font-size: 13px;
+    font-weight: bold;
+   
+}
+.show-product .show-pr-text p:nth-child(2){
+ 
+    font-size: 50px;
+   font-family: EB Garamond;
+   margin-top: 2%;
+}
+.show-pr{
+    width: 100%;
+    height: 55%;
+    position: relative;
+    top:14%;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+@keyframes scalebg{
+        from{
+            transform: scale(1);
+        }
+        to{
+            transform: scale(1.1);
+        }
+}
+@keyframes scalebg2{
+    from{
+        transform: scale(1.1);
+        opacity: 0;
+       
+    }
+    to{
+        transform: scale(0.8);
+        opacity: 1;
+        
+    }
+}
+.product-img{
+    width: 25%;
+    height: 100%;
+    background-image: url(thecoffeeimage/product_jpg001.jpg);
+    background-position: top;
+    background-size: 62% 62%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.show-pr .product-img p{
+    position: relative;
+    top:80%;
+    margin-top: 2%;
+}
+.show-pr .product-img p:nth-child(2){
+    font-size: 25px;
+    font-family: EB Garamond;
+}
+.product-img:hover{
+    background-size: 65% 65%;
+}
+.show-pr .product-img p:hover{
+    color:#FF9999;
+}
+.play-video{
+    width: 100%;
+   padding-top: 300px;
+   padding-bottom: 300px;
+    background-image: url(thecoffeeimage/aboutus_jpg02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    text-align: center;
+    
+}
+.play-video input{
+    width: 7%;
+    height:100px;
+   background-color: transparent;
+   border: 2px solid white;
+   border-radius: 50%;
+   font-size: 12px;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+   transition: all 0.5s;
+
+}
+.play-video input:hover{
+    transform:scale(1.05);
+    color:#FF9999;
+    border-color: #FF9999;
+}
+.event .event-1 p:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+    color:#FF9999;
+    margin-top: 10%;
+}
+.event .event-1 p:nth-child(2){
+    font-size: 50px;
+    font-family:EB Garamond;
+    margin-top: 2%;
+}
+.event{
+    display: flex;
+    height: 700px;
+    
+    justify-content: space-evenly;
+}
+.event .event-1{
+    width: 30%;
+ 
+    height: 100%;
+}
+.event .event-2{
+    width: 60%;
+    height: 100%;
+   
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.event .event-2 .event-time{
+    width: 100%;
+    height: 20%;
+    
+}
+.event-time{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.event-time .event_time_1{
+    width: 50%;
+    color: #888888;
+}
+.event-time .event_time_2{
+    width: 25%;
+    font-family:EB Garamond;
+    font-size: 20px;
+}
+.event-time .event_time_1,.event_time_2{
+    margin-top: 2%;
+}
+.datetime p:nth-child(1){
+    font-weight: EB Garamond;
+    font-size: 25px;
+    margin-top: 35%;
+}
+.datetime p:nth-child(2){
+    color: #888888;
+    /* margin-top: 2%; */
+}
+.datetime{
+    width: 10%;
+    height: 100%;
+   
+    text-align: center;
+}
+.event_time_img{
+    width: 20%;
+    height:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 91% 91%;
+    transition: all 0.2s;
+}
+.event_detail{
+    width: 35%;
+   
+    
+}
+.event-detail-2{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    
+}
+.event-detail-2 p{
+    font-size: 13px;
+    color:#888888;
+}
+.free{
+    width: 25%;
+}
+.free p{
+    color:#FF9999;
+    font-size: 20px;
+    font-weight: bold;
+}
+.event-detail-1{
+    font-family: EB Garamond;
+    font-size: 20px;
+}
+.event_time_img:hover{
+    /* background-size: 92% 92%; */
+    transform: scale(1.1);
+}
+.love_it{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 500px;
+    
+}
+
+.love_it .love_it1,.love_it2{
+    width: 45%;
+    height: 100%;
+    margin-top: 5%;
+   
+}
+.love_it1 p:nth-child(1){
+    font-size: 15px;
+    font-weight: bold;
+    color:#FF9999;
+    margin-top: 10%;
+}
+.love_it1 p:nth-child(2){
+    font-size: 50px;
+    font-family:EB Garamond;
+    margin-top: 2%;
+}
+.love_it2 p:nth-child(1){
+    margin-top: 16%;
+    font-size: 15px;
+    color:#888888;
+
+}
+.love_it2 p:nth-child(2){
+    margin-top: 5%;
+    font-size: 25px;
+    font-family:EB Garamond;
+    font-weight: bold;
+}
+.love_it2 p:nth-child(2)::after{
+    content:'';
+    width: 0;
+    display: block;
+    height: 3px;
+    background-color: black;
+    transition: width 0.3s;
+}
+.love_it2 p:nth-child(2):hover::after{
+    width: 8%;
+}
+.cafe_slide{
+    display: flex;
+    width: 200%;
+    height: 400px;
+    background-color: #FF9999;
+    /* justify-content: space-evenly; */
+}
+.small_image{
+    width: 10%;
+    height: 80%;
+    background-color: aqua;
+    position: relative;
+    top:10%;
+}
+.large_image{
+    width: 10%;
+    height: 100%;
+    background-color: #FF9966;
+    margin-left: 0.6%;
+    margin-right: 0.6%;
+}
+.fback{
+    width: 100%;
+    height: 600px;
+    background-image: url(thecoffeeimage/feedbackbg_jpg001.jpg);
+    background-size:cover ;
+    background-repeat: no-repeat;
+    
+}
+.fbslide{
+    height: 60%;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top:10%;
+    text-align: center;
+   
+}
+.arrow_fb{
+    position: relative;
+    font-size: 45px;
+    opacity:0.5;
+    display: flex;
+    width: 90%;
+    left:5%;
+    justify-content: space-between;
+    height: 10%;
+    opacity: 0;
+    top:45%;
+    transition: all 1s;
+}
+.fback .fbslide .fbcontent{
+    width: 100%;
+    font-size: 28px;
+    margin: 0 auto; 
+    position: relative;
+    top:16%;
+    color:black;
+    font-family:EB Garamond;
+    opacity: 0.6;
+}
+.fbslide .avt{
+    width: 12%;
+    height: 24%;
+    margin: 0 auto;
+    position: relative;
+    top:8%;
+    border-radius:100px;
+    background-image: url(thecoffeeimage/ourproduct_jpg001.jpg);
+
+
+}
+.fback:hover .arrow_fb{
+    opacity: 0.6;
+}
+.changefb{
+    width: 30%;
+    height: 10%;
+    position: relative;
+    top:10%;
+    text-align: center;
+    margin: 0 auto;
+}
+.partners{
+    width: 100%;
+    height:700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #ffafaf;
+
+}
+.ourpartners{
+    width: 90%;
+    height: 50%;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ourpartners .ourpartners-4{
+    display:flex;
+    height: 47%;
+    justify-content: space-evenly;
+}
+.ourpartners-4 div{
+    width: 22%;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+    
+    
+}
+.ourpartners-4 div img{
+    width: 90%;
+    margin-top: 7%;
+    opacity: 0.2;
+    transition: all 0.5s;
+}
+.partners_text{
+    margin-top: 8%;
+}
+.partners_text p:nth-child(1){
+    font-size: 15px;
+    color: #111010;
+
+}
+.partners_text p:nth-child(2){
+    font-size: 50px;
+    color: #080707;
+    font-family: EB Garamond;
+
+}
+.ourpartners-4 div img:hover{
+    opacity: 1;
+}
+.footer{
+    width: 100%;
+    height: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.navbar_footer{
+    display: flex;
+    width: 30%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.navbar_footer li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+.logothecoffee{
+    width: 13%;
+   
+    margin: 0 auto;
+}
+.socialmedia-footer{
+    width: 13%;
+   
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0 auto;
+}
+.socialmedia-footer ion-icon{
+    font-size: 30px;
+}
+.footer-line{
+    width: 80%;
+    height: 1px;
+    background-color: black;
+    margin: 0 auto;
+}
+.last_text-footer{
+    display: flex;
+    width: 20%;
+    margin: 0 auto;
+}
+.last_text-footer p:nth-child(1){
+    color:black
+}
+.last_text-footer p:nth-child(2){
+    color:#888888;
+}
+.footer_nav_link::after{
+    content:'';
+    display: block;
+    width: 0%;
+    height: 3px;
+    transition: width 0.5s;
+    background-color:black;
+}
+.footer_nav_link:hover::after{
+    width: 100%;
+}
+@media only screen and (max-width:740px){
+    .contact{
+        display: none;
+    }
+    .nav_bar{
+        display: none;
+    }
+    .logo{
+        width: 30%;
+    }
+    .header_tool{
+        padding-top: 5.2%;
+    }
+    .nav_mobile{
+        display: block;
+    }
+    .header_tool {
+       width: 50%;
+    }
+    .aboutus div input{
+        width: 40%;
+    }
+    .aboutus div p:nth-child(1){
+        font-size: 10px;
+        margin-bottom: 1%;
+        display: none;
+    }
+    .aboutus div p:nth-child(2){
+        font-size: 25px;
+        margin-bottom: 1%;
+    }
+    .aboutus{
+        background-size: 100% 100%;
+    }
+    .aboutus div input{
+        width: 40%;
+        font-size: 12px;
+        height: 30px;
+    }
+    .aboutusbg2{
+        margin-top: -65%;
+    }
+    .ourproduct{
+        position:absolute;
+        top:50.5%;
+    }
+    .ourproduct1{
+       flex-direction: column;
+        justify-content: space-around;
+        
+    }
+    .ourproduct1 div:nth-child(1){
+        width: 100%;
+        text-align: center;
+        height: 2000px;
+    }
+    .ourproduct1 div:nth-child(2){
+        width: 100%;
+    }
+    .ourproduct1 div p:nth-child(1){
+        color:#FF9999;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .ourproduct1 div p:nth-child(2){
+        color:Black;
+        font-size: 25px;
+        font-family:EB Garamond;
+        margin-top: 7%;
+    }
+    .ourproduct1 div p:nth-child(3){
+        color:Black;
+        font-size: 15px;
+        margin-top: 7%;
+    }
+    .ourproduct1 div input{
+        width: 50%;
+        margin-top: 15%;
+    }  
+    .line-ver{
+        font-size: 13px;
+        width: 90%;
+    }
+    .ourproduct1 div:nth-child(2){
+        background-image: url(thecoffeeimage/aboutus_jpg01.jpg),url(thecoffeeimage/aboutus_jpg02.jpg),url(thecoffeeimage/aboutus_jpg03.jpg);
+        background-repeat: no-repeat;
+        background-size: 65%,70%,70%;
+        background-position: left,50% 20%,95% 85%;
+        height: 1000px;
+     }
+     .ourproduct2{
+        height: 1700px;
+     }
+     .layout-our2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+     }
+     .layout-our2 img{
+        width: 90%;
+        height: 25%;
+        margin: 0 auto;
+     }
+     .ourproduct2 .layout-our2 .text-ourpr2  {
+        text-align: center;
+        width: 100%;
+     }
+     .ourproduct2 .layout-our2 .text-ourpr2 p{
+        margin-top: 7%;
+     }
+     .ourproduct2 .layout-our2 .text-ourpr2 p:nth-child(2){
+        font-size: 25px;
+     }
+     .ourproduct2 .layout-our2 .text-ourpr2 ul{
+        margin-top: 7%;
+     }
+     .ourproduct2 .layout-our2 .text-ourpr2 input{
+        font-size: 17px;
+        width: 50%;
+        height: 10%;
+        margin-top: 7%;
+     }
+     .show-product{
+        height: 2500px;
+     }
+     .show-pr{
+        flex-direction: column;
+        
+     }
+     .product-img{
+        width: 100%;
+        height: 30%;
+        background-size: 55% 55%;
+        background-position: 50% 10%;
+       
+      
+     }
+     .product-img p:nth-child(2){
+      
+     }
+     .show-pr .product-img p{
+        position: relative;
+        top:70%;
+       
+    }
+     .show-pr-text{
+        
+        width: 100%;
+     }
+     .play-video input{
+        width: 50%;
+        border-radius: 100px;
+        height: 80px;
+     }
+     .fback .fbslide{
+        width: 95%;
+     }
+     .fback .fbslide .fbcontent{
+        font-size: 13px;
+     }
+     .arrow_fb{
+        display: none;
+     }
+     .fbslide .avt{
+        width: 100px;
+        height: 100px;
+     }
+
+     /*--partnerts--*/
+     .partners{
+        width: 100%;
+        height:2000px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        text-align: center;
+      
+    }
+    .ourpartners{
+        width: 90%;
+        height: 70%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .ourpartners .ourpartners-4{
+        width: 100%;
+        display:flex;
+        height: 50%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    .ourpartners-4 div{
+        width: 100%;
+        height: 24.1%;
+        border: 1px solid black;
+        text-align: center;
+        
+        
+    }
+    .ourpartners-4 div img{
+        width: 90%;
+        /* height: 80%; */
+        margin-top: 10%;
+        opacity: 0.2;
+        transition: all 0.5s;
+    }
+    
+    .partners_text p:nth-child(1){
+        font-size: 15px;
+        color: #FF9999;
+    
+    }
+    .partners_text p:nth-child(2){
+        font-size: 35px;
+        color: #080707;
+        font-family: EB Garamond;
+    
+    }
+    .ourpartners-4 div img:hover{
+        opacity: 1;
+    }
+    /*-----------------*/
+    /*--------footer--------*/
+    .footer{
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .navbar_footer{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .navbar_footer li{
+        list-style: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .logothecoffee{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .socialmedia-footer{
+        width: 50%;
+        justify-content: space-evenly;
+        display: flex;
+        margin: 0 auto;
+    }
+    .socialmedia-footer ion-icon{
+        font-size: 25px;
+    }
+    .footer-line{
+        width: 80%;
+        height: 1px;
+        background-color: black;
+        margin: 0 auto;
+    }
+    .last_text-footer{
+        display: flex;
+        width: 74%;
+        margin: 0 auto;
+    }
+    .last_text-footer p:nth-child(1){
+        color:black;
+        width: 50%;
+        font-size: 12px;
+    }
+    .last_text-footer p:nth-child(2){
+        color:#888888;
+        width: 50%;
+        font-size: 12px;
+    }
+    /*-----------------------------*/
+    /*------------event-----------*/
+    .event .event-1 p:nth-child(1){
+        font-size: 15px;
+        font-weight: bold;
+        color:#FF9999;
+        margin-top: 10%;
+    }
+    .event .event-1 p:nth-child(2){
+        font-size: 30px;
+        font-family:EB Garamond;
+    }
+    .event{
+        display: flex;
+        height: 2700px;
+        flex-direction: column;
+        text-align: center;
+
+       
+    }
+    .event .event-1{
+        width: 100%;
+        height: 20%;
+    }
+    .event .event-2 .event-time:nth-child(1){
+        height: 10%;
+    }
+    .event .event-2 .event-time:nth-child(2){
+        height: 10%;
+    }
+    .event .event-2{
+        width: 100%;
+        height: 88%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        margin-top: -20%;
+    }
+    .event .event-2 .event-time{
+        width: 100%;
+        
+    }
+    .event-time{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;  
+    }
+    .event-time .event_time_1{
+        width: 90%;
+        color: #888888;
+        font-size: EB Garamond;
+    }
+    .event-time .event_time_2{
+        font-family:EB Garamond;
+        font-size: 20px;
+        width: 90%;
+       
+    }
+    .event-time .event_time_1,.event_time_2{
+       
+    }
+    .datetime p:nth-child(1){
+        font-weight: EB Garamond;
+        font-size: 20px;
+        margin-top: 0%;
+        margin-left: 1%;
+        
+    }
+    .datetime p:nth-child(2){
+        color: #888888;
+        /* margin-top: 2%; */
+    }
+    .datetime{
+        width: 100%;
+        height: 10%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+       display: flex;
+       
+     
+    }
+    .event_time_img{
+        width: 100%;
+        /* height: 30%; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80% 95%;
+        transition: all 0.2s;
+    }
+  
+    .event_detail{
+        width: 80%;
+        height: 10%;   
+    }
+    .event-detail-2{
+        display: flex;
+        width: 100%;
+    }
+    .event-detail-2 p{
+        font-size: 13px;
+        color:#888888;
+    }
+    .free{
+        width: 100%;
+    }
+    .free p{
+        color:#FF9999;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 5%;
+    }
+    .event-detail-1{
+        font-family: EB Garamond;
+        font-size: 20px;
+    }
+    .event-time2{
+        display:none;
+    }
+    /*-------------------------*/
+    /*-----loveit-------------*/
+    .love_it{
+        flex-direction: column;
+        height: 1000px;
+    }
+    .love_it .love_it1,.love_it2{
+        width: 100%;
+    }
+}
+@media only screen and (min-width:600px) and (max-width:600px){
+    .ourproduct1 div:nth-child(2){
+       position: relative;
+       top:10%;
+    }
+    .layout-our2 img{
+        width: 80%;
+        height: 40%;
+        position: relative;
+        top:12%;
+    }
+    .aboutusbg1{
+        
+    }
+    .ourproduct{
+        margin-top: 11%;
+    }
+    .ourproduct2{
+        margin-top: 11%;
+    }
+    .ourpartners-4 div img{
+        width: 90%;
+        /* height: 80%; */
+        margin-top: 0%;
+        opacity: 0.2;
+        transition: all 0.5s;
+    }
+    .product-img{ 
+        background-size: 40% 40%;
+        background-position: 50% 10%;
+     }
+    .event_time_img{
+        background-size: 50% 70%;
+    }
+
+}
+@media only screen and (min-width:740px) and (max-width:1023px){
+    .hoveref{
+        font-size: 13px;
+    }
+    /*---------aboutus----------------*/
+    .aboutus{
+        margin-bottom: -180px;
+    }
+    .aboutus .aboutusbg1 input{
+        width: 200px;
+    }
+    /*-------OUR PRODUCT------------*/
+    .ourproduct{
+       
+    }
+    .ourproduct .ourproduct1 .btn-ourproduct{
+            width: 50%;
+    }
+    .ourproduct .ourproduct1 div p:nth-child(2){
+        font-size:35px;
+    }
+    .ourproduct .ourproduct1 div p:nth-child(3){
+        font-size:14px;
+    }
+    .ourproduct .ourproduct1 div .line-ver{
+        font-size:12px;
+    }
+    .ourproduct1 div:nth-child(2){
+        background-position: 20%,80%,95% 70%;
+    }
+    /*----------ourproduct2--------------*/
+    .ourproduct2 .layout-our2 img{
+        height: 60%;
+        width: 35%;
+    }
+    .text-ourpr2 p:nth-child(2){
+      
+    }
+    .btn-ourpr2{
+        width: 50%;
+    }
+    
+}
+@media only screen and  (min-width:1024px){
+    
+}
+.scrollmenu{
+    max-height:  120px;
+    width: 500px;
+    display: flex;
+    border:1px solid black;
+    overflow-X: auto;
+    /* flex-direction: column; */
+    width: 120px;
+   
+    position:relative;
+    top:100px;
+    left:20%;
+    overflow-y: hidden;
+    
+    
+}
+.scrollmenu::-webkit-scrollbar{
+    width:2;
+
+}
+.scrollmenu div{
+    height:110px;
+    color:#080707;
+    line-height: 110px;
+    background-color: brown;
+    margin-right:10px ;
+    min-width: 100px;
+    margin-right: 2px;
+  
+    margin-right:20px;
+    
+}
+.container{
+    width: 50%;
+    
+}
+.container div{
+    width: 80%;
+    margin-top: 1%;
+    display: flex;
+    
+}
+.container div input{
+    width: 50%;
+}
+.container div label{
+    width: 20%;
+    
+}
